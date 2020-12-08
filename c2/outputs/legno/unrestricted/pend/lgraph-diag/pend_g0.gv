@@ -1,0 +1,129 @@
+digraph "adp-viz" {
+	graph [overlap=false splines=true]
+	shape=record
+	lut_0_3_2_0 [label="{{<x> x
+ 1.00e+00} |<block> lut_0_3_2_0| {<z> z
+ 1.00e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"lut_0_3_2_0-config" [label="\modes: [(*)]
+e=(* (const 0.05) (* (const -0.8) (sin (* (const 2.0) (var y))))) injs={'y': 1.0, 'e': 1.0} scfs={'y': 1.0, 'e': 1.0}" fillcolor="#ffeaa7" shape=note style=filled]
+	"lut_0_3_2_0-config" -> lut_0_3_2_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	adc_0_3_2_0 [label="{{<x> x
+ 1.00e+00} |<block> adc_0_3_2_0| {<z> z
+ 1.00e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"adc_0_3_2_0-config" [label="\modes: [(m)]" fillcolor="#ffeaa7" shape=note style=filled]
+	"adc_0_3_2_0-config" -> adc_0_3_2_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	dac_0_3_2_0 [label="{{<x> x
+ 1.00e+00} |<block> dac_0_3_2_0| {<z> z
+ 1.00e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"dac_0_3_2_0-config" [label="\modes: [(dyn,h)]
+c=0.00 scf=1.00e+00" fillcolor="#ffeaa7" shape=note style=filled]
+	"dac_0_3_2_0-config" -> dac_0_3_2_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	integ_0_3_1_0 [label="{{<x> x
+ 1.00e+00} |<block> integ_0_3_1_0| {<z> z
+ 1.00e+00
+ (var angvel)}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"integ_0_3_1_0-config" [label="\modes: [(m,m,+)]
+z0=-0.50 scf=1.00e+00" fillcolor="#ffeaa7" shape=note style=filled]
+	"integ_0_3_1_0-config" -> integ_0_3_1_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	integ_0_3_2_0 [label="{{<x> x
+ 1.00e+00} |<block> integ_0_3_2_0| {<z> z
+ 1.00e+00
+ (var ang)}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"integ_0_3_2_0-config" [label="\modes: [(m,m,+)]
+z0=0.50 scf=1.00e+00" fillcolor="#ffeaa7" shape=note style=filled]
+	"integ_0_3_2_0-config" -> integ_0_3_2_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	mult_0_3_0_1 [label="{{<x> x
+ 1.00e+00|<y> y
+ 1.00e+00} |<block> mult_0_3_0_1| {<z> z
+ 1.00e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"mult_0_3_0_1-config" [label="\modes: [(x,m,m), (x,h,h)]
+c=-0.18 scf=1.00e+00" fillcolor="#ffeaa7" shape=note style=filled]
+	"mult_0_3_0_1-config" -> mult_0_3_0_1:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	mult_0_3_2_1 [label="{{<x> x
+ 1.00e+00|<y> y
+ 1.00e+00} |<block> mult_0_3_2_1| {<z> z
+ 1.00e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"mult_0_3_2_1-config" [label="\modes: [(x,h,m)]
+c=10.00 scf=1.00e+00" fillcolor="#ffeaa7" shape=note style=filled]
+	"mult_0_3_2_1-config" -> mult_0_3_2_1:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	mult_0_3_0_0 [label="{{<x> x
+ 1.00e+00|<y> y
+ 1.00e+00} |<block> mult_0_3_0_0| {<z> z
+ 1.00e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"mult_0_3_0_0-config" [label="\modes: [(x,m,h)]
+c=0.10 scf=1.00e+00" fillcolor="#ffeaa7" shape=note style=filled]
+	"mult_0_3_0_0-config" -> mult_0_3_0_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	mult_0_3_1_1 [label="{{<x> x
+ 1.00e+00|<y> y
+ 1.00e+00} |<block> mult_0_3_1_1| {<z> z
+ 1.00e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"mult_0_3_1_1-config" [label="\modes: [(x,m,m), (x,h,h)]
+c=0.67 scf=1.00e+00" fillcolor="#ffeaa7" shape=note style=filled]
+	"mult_0_3_1_1-config" -> mult_0_3_1_1:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	extout_0_3_2_0 [label="{{<x> x
+ 1.00e+00} |<block> extout_0_3_2_0| {<z> z
+ 1.00e+00
+ (var Angle)}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"extout_0_3_2_0-config" [label="\modes: [(*)]" fillcolor="#ffeaa7" shape=note style=filled]
+	"extout_0_3_2_0-config" -> extout_0_3_2_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	fanout_0_3_1_1 [label="{{<x> x
+ 1.00e+00} |<block> fanout_0_3_1_1| {<z0> z0
+ 1.00e+00
+ (var angvel)|<z1> z1
+ 1.00e+00
+ (var angvel)|<z2> z2
+ 1.00e+00
+ (var angvel)}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"fanout_0_3_1_1-config" [label="\modes: [(+,+,+,m), (+,+,+,h)]" fillcolor="#ffeaa7" shape=note style=filled]
+	"fanout_0_3_1_1-config" -> fanout_0_3_1_1:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	fanout_0_3_0_0 [label="{{<x> x
+ 1.00e+00} |<block> fanout_0_3_0_0| {<z0> z0
+ 1.00e+00
+ (var ang)|<z1> z1
+ 1.00e+00
+ (var ang)|<z2> z2
+ 1.00e+00
+ (var ang)}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"fanout_0_3_0_0-config" [label="\modes: [(+,+,+,m), (+,+,+,h)]" fillcolor="#ffeaa7" shape=note style=filled]
+	"fanout_0_3_0_0-config" -> fanout_0_3_0_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	tout_0_3_0_0 [label="{{<x> x
+ 1.00e+00} |<block> tout_0_3_0_0| {<z> z
+ 1.00e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"tout_0_3_0_0-config" [label="\modes: [(*)]" fillcolor="#ffeaa7" shape=note style=filled]
+	"tout_0_3_0_0-config" -> tout_0_3_0_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	shape=record
+	tout_0_3_0_1 [label="{{<x> x
+ 1.00e+00} |<block> tout_0_3_0_1| {<z> z
+ 1.00e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"tout_0_3_0_1-config" [label="\modes: [(*)]" fillcolor="#ffeaa7" shape=note style=filled]
+	"tout_0_3_0_1-config" -> tout_0_3_0_1:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
+	adc_0_3_2_0:z -> lut_0_3_2_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	lut_0_3_2_0:z -> dac_0_3_2_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	dac_0_3_2_0:z -> mult_0_3_2_1:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	mult_0_3_0_1:z -> integ_0_3_1_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	mult_0_3_2_1:z -> integ_0_3_1_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	mult_0_3_0_0:z -> integ_0_3_2_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	mult_0_3_1_1:z -> tout_0_3_0_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	tout_0_3_0_0:z -> extout_0_3_2_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	integ_0_3_1_0:z -> fanout_0_3_1_1:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	integ_0_3_2_0:z -> fanout_0_3_0_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	fanout_0_3_1_1:z0 -> mult_0_3_0_1:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	fanout_0_3_1_1:z1 -> mult_0_3_0_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	fanout_0_3_0_0:z0 -> adc_0_3_2_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	fanout_0_3_0_0:z1 -> mult_0_3_1_1:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	fanout_0_3_0_0:z2 -> tout_0_3_0_1:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	tout_0_3_0_1:z -> extout_0_3_2_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
+	time_const [label="tau:1.000000"]
+}
