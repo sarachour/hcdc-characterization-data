@@ -1,12 +1,13 @@
 {
-    "tau": 0.9435346162258217,
+    "tau": 0.6349206349210136,
     "metadata": {
         "meta": {
             "dsname": "cos",
             "subset": "unrestricted",
             "lgraph_id": 1,
-            "aqm": 87.15155828067923,
-            "dqm": 127.49803921559354,
+            "aqmst": 119.77398554236312,
+            "aqm": 39.46375118541691,
+            "dqm": 58.18793728156177,
             "lscale_method": "phys",
             "lscale_objective": "qty",
             "runt_calib_obj": "best",
@@ -195,7 +196,7 @@
                     "name": "x",
                     "type": "port",
                     "source": null,
-                    "scf": 17.430311656137594
+                    "scf": 7.892750237084174
                 },
                 "z": {
                     "name": "z",
@@ -205,12 +206,12 @@
                         "args": [],
                         "name": "V"
                     },
-                    "scf": 17.79921698349193
+                    "scf": 11.977398554236856
                 },
                 "z0": {
                     "name": "z0",
                     "type": "const",
-                    "scf": 1.8774326148933396,
+                    "scf": 1.2633566245152077,
                     "value": 0.0
                 },
                 "port_cal_in": {
@@ -264,7 +265,7 @@
                     "name": "x",
                     "type": "port",
                     "source": null,
-                    "scf": 17.79921698349193
+                    "scf": 11.977398554236856
                 },
                 "z": {
                     "name": "z",
@@ -345,12 +346,12 @@
                     "name": "z",
                     "type": "port",
                     "source": null,
-                    "scf": 17.430311656137594
+                    "scf": 7.892750237084174
                 },
                 "c": {
                     "name": "c",
                     "type": "const",
-                    "scf": 1.0,
+                    "scf": 0.45281750509061985,
                     "value": -1.0
                 },
                 "pmos": {

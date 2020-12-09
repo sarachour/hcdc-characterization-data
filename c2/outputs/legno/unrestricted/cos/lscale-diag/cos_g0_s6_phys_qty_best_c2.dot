@@ -2,66 +2,66 @@ digraph "adp-viz" {
 	graph [overlap=false splines=true]
 	shape=record
 	integ_0_3_3_0 [label="{{<x> x
- 1.08e-01} |<block> integ_0_3_3_0| {<z> z
- 1.10e+00
+ 1.73e-01} |<block> integ_0_3_3_0| {<z> z
+ 1.71e+00
  (var V)}}" fillcolor="#ecf0f1" shape=record style=filled]
-	"integ_0_3_3_0-config" [label="\modes: [(m,m,+)]
-z0=0.00 scf=1.82e+00" fillcolor="#ffeaa7" shape=note style=filled]
+	"integ_0_3_3_0-config" [label="\modes: [(h,m,+)]
+z0=0.00 scf=1.84e+00" fillcolor="#ffeaa7" shape=note style=filled]
 	"integ_0_3_3_0-config" -> integ_0_3_3_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
 	shape=record
 	integ_0_3_0_0 [label="{{<x> x
- 1.09e+00} |<block> integ_0_3_0_0| {<z> z
- 1.09e+00
+ 1.68e-01} |<block> integ_0_3_0_0| {<z> z
+ 1.76e+01
  (var P)}}" fillcolor="#ecf0f1" shape=record style=filled]
-	"integ_0_3_0_0-config" [label="\modes: [(h,m,+)]
+	"integ_0_3_0_0-config" [label="\modes: [(h,h,+)]
 z0=0.50 scf=1.98e+00" fillcolor="#ffeaa7" shape=note style=filled]
 	"integ_0_3_0_0-config" -> integ_0_3_0_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
 	shape=record
 	mult_0_3_3_0 [label="{{<x> x
- 1.10e+00|<y> y
+ 1.74e+01|<y> y
  1.00e+00} |<block> mult_0_3_3_0| {<z> z
- 1.08e-01}}" fillcolor="#ecf0f1" shape=record style=filled]
-	"mult_0_3_3_0-config" [label="\modes: [(x,m,m)]
+ 1.73e-01}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"mult_0_3_3_0-config" [label="\modes: [(x,h,m)]
 c=-1.00 scf=1.00e+00" fillcolor="#ffeaa7" shape=note style=filled]
 	"mult_0_3_3_0-config" -> mult_0_3_3_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
 	shape=record
 	mult_0_3_0_0 [label="{{<x> x
- 1.10e+00|<y> y
+ 1.71e+00|<y> y
  1.00e+00} |<block> mult_0_3_0_0| {<z> z
- 1.09e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
-	"mult_0_3_0_0-config" [label="\modes: [(x,m,h)]
+ 1.68e-01}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"mult_0_3_0_0-config" [label="\modes: [(x,m,m)]
 c=100.00 scf=9.92e-03" fillcolor="#ffeaa7" shape=note style=filled]
 	"mult_0_3_0_0-config" -> mult_0_3_0_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
 	shape=record
 	mult_0_3_0_1 [label="{{<x> x
- 1.10e+00|<y> y
+ 1.75e+01|<y> y
  1.00e+00} |<block> mult_0_3_0_1| {<z> z
- 6.53e-01}}" fillcolor="#ecf0f1" shape=record style=filled]
-	"mult_0_3_0_1-config" [label="\modes: [(x,m,m)]
+ 1.02e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
+	"mult_0_3_0_1-config" [label="\modes: [(x,h,m)]
 c=0.17 scf=5.95e+00" fillcolor="#ffeaa7" shape=note style=filled]
 	"mult_0_3_0_1-config" -> mult_0_3_0_1:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
 	shape=record
 	extout_0_3_2_0 [label="{{<x> x
- 6.53e-01} |<block> extout_0_3_2_0| {<z> z
- 6.53e-01
+ 1.02e+00} |<block> extout_0_3_2_0| {<z> z
+ 1.02e+00
  (var Position)}}" fillcolor="#ecf0f1" shape=record style=filled]
 	"extout_0_3_2_0-config" [label="\modes: [(*)]" fillcolor="#ffeaa7" shape=note style=filled]
 	"extout_0_3_2_0-config" -> extout_0_3_2_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
 	shape=record
 	fanout_0_3_0_1 [label="{{<x> x
- 1.09e+00} |<block> fanout_0_3_0_1| {<z0> z0
- 1.10e+00
+ 1.76e+01} |<block> fanout_0_3_0_1| {<z0> z0
+ 1.74e+01
  (var P)|<z1> z1
- 1.10e+00
+ 1.75e+01
  (var P)|<z2> z2
- 1.09e+00
+ 1.74e+01
  (var P)}}" fillcolor="#ecf0f1" shape=record style=filled]
-	"fanout_0_3_0_1-config" [label="\modes: [(+,+,+,m)]" fillcolor="#ffeaa7" shape=note style=filled]
+	"fanout_0_3_0_1-config" [label="\modes: [(+,+,+,h)]" fillcolor="#ffeaa7" shape=note style=filled]
 	"fanout_0_3_0_1-config" -> fanout_0_3_0_1:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
 	shape=record
 	tout_0_3_0_0 [label="{{<x> x
- 6.53e-01} |<block> tout_0_3_0_0| {<z> z
- 6.53e-01}}" fillcolor="#ecf0f1" shape=record style=filled]
+ 1.02e+00} |<block> tout_0_3_0_0| {<z> z
+ 1.02e+00}}" fillcolor="#ecf0f1" shape=record style=filled]
 	"tout_0_3_0_0-config" [label="\modes: [(*)]" fillcolor="#ffeaa7" shape=note style=filled]
 	"tout_0_3_0_0-config" -> tout_0_3_0_0:block [arrowhead=tee arrowtail=normal color="#e17055" penwidth=2 style=dashed]
 	mult_0_3_3_0:z -> integ_0_3_3_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
@@ -72,5 +72,5 @@ c=0.17 scf=5.95e+00" fillcolor="#ffeaa7" shape=note style=filled]
 	fanout_0_3_0_1:z0 -> mult_0_3_3_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
 	fanout_0_3_0_1:z1 -> mult_0_3_0_1:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
 	integ_0_3_3_0:z -> mult_0_3_0_0:x [arrowhead=box arrowtail=normal color="#3B3B98" penwidth=4]
-	time_const [label="tau:1.006082"]
+	time_const [label="tau:0.099309"]
 }
